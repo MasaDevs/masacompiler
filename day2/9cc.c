@@ -9,8 +9,8 @@ int  main(int argc, char *argv[])
 		return 1;
 	}
 	printf(".intel_syntax noprefix\n");
-	printf(".globl	main\n");
-	printf("main:\n");
+	printf(".globl	_main\n");
+	printf("_main:\n");
 	printf("	mov rax, %d\n", atoi(argv[1]));
 	printf("	ret\n");
 }
